@@ -1,0 +1,160 @@
+@import '../../assests/styles/variables.scss';
+
+
+
+.whgpt3__container{
+    width: 100%;
+    height: auto !important;
+    margin-top: 8rem;
+    @include Grid-center;
+  .whatgpt3__container__wrapper{
+    width: 100%;
+    max-width: 1170px;
+    height: 695px; 
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
+     background:radial-gradient(circle at 3% 25%, rgb(20, 120, 227) 0%, rgb(4, 35, 81) 100%);
+     @include flex-box-center(column);
+     padding:5rem;
+
+     @include max-width(550px){
+      max-width:300PX;
+      height: auto; 
+      padding: 1rem;
+     }
+
+     .features__conatiner{
+        flex-direction: row;
+        justify-content: space-between;
+        @include max-width(550px){
+          flex-direction:column;
+        }
+        
+     }
+
+       .wgpt3__dec__two{
+        margin-top: 6rem;
+        margin-bottom: 3rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        @include max-width(550px){
+          flex-direction: column;
+          margin-top: 15rem;
+        }
+
+
+
+
+         .wgpt3__heading {
+            width: 472px;
+          
+             font-family: $font-family;
+            
+            font-weight: 800;
+            font-size: 2.5rem;
+            line-height: 3.5rem;
+             background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%), #FFFFFF;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+           -webkit-text-fill-color: transparent;
+            
+           @include max-width(550px){
+            max-width: 300px;
+            align-self: flex-start;
+            font-size: 1rem;
+           }
+
+            
+         }
+
+         p{
+            width: 200px;
+            height: 30px;
+            font-family: 'Manrope';
+            font-weight: 500;
+            font-size: 1rem;
+            line-height:1.5rem;
+            color: $color-subtext;
+
+            @include max-width(550px){
+              max-width: 300px;
+              align-self: flex-start;
+              font-size: 1rem;
+              padding-top: 1rem;
+             }
+
+         }
+       }
+       
+       .wgpt3__sec__three{
+        width: 100%;
+        @include flex-box-center(row);
+        margin-top: 3rem;
+
+        @include max-width(550px){
+          flex-direction: column;
+          margin-top: 1rem;
+       }
+
+          .features__conatiner {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+
+            flex-direction: column;
+            width:335px;
+            height: 220px;
+            
+            padding: 0.8rem;
+            gap: 1rem;
+
+            @include max-width(550px){
+             max-width:300px;
+             padding: 0;
+             margin: 0;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             flex-direction: column;
+             gap: 7rem;
+            }
+
+            .features__title,.feature__upperline{
+              @include max-width(550px){
+                margin-left: 1rem;
+              }
+            }
+             
+
+            
+            p{
+                width: 334px;
+                height: 92px;
+              font-family: $font-family;
+               font-weight: 500;
+               font-size: 0.6rem;
+               line-height: 1.8rem;
+               text-align: justify;
+               color: $color-text;
+               margin-top: -5rem;
+               align-self: center;
+               padding-right: 0.6rem;
+               padding-right: 2rem;
+
+               @include max-width(550px){
+                  padding: 2rem;
+                  font-size: 0.7rem;
+                  align-self: flex-start;
+                  margin-top:-8rem;
+               }
+
+            }
+
+       }
+   }
+  }
+}

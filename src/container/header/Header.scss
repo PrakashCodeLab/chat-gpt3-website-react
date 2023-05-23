@@ -1,0 +1,206 @@
+@import '../../assests/styles/variables.scss';
+
+
+.header__container{
+    width: 100%;
+    height: auto;
+    @include Grid-center;
+}
+
+.header__container__wrapper{
+    width: 100%;
+    height: auto ;
+    max-width: 1100.32px;
+    @include flex-box-center(row);
+    flex-flow: row , wrap;
+    @include max-width(1100px) {
+        flex-direction: column; 
+    }
+    
+
+    .header__sec__left {
+        
+        align-self:center;
+        align-items: first baseline;
+        margin-top: 5rem;
+
+        @include max-width(550px){
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+    
+        }
+        h2{
+            font-family: $font-family;
+            max-width: 614px;
+             font-weight: 800;
+              font-size: 3rem;
+             line-height: 4rem;
+             letter-spacing: -0.04em;
+             background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+             -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+          
+              @include max-width(800px){
+                font-size: 2rem;
+                max-width: 300px;
+                font-weight: 500;
+                line-height: 2.5rem;
+                align-self: first baseline;
+                text-align: justify;
+            }
+
+
+            }
+
+            p{
+                width: 554px;
+                padding-top: 2rem;
+              font-family: $font-family;
+            
+               font-weight: 400;
+               font-size: 1.2rem;
+               line-height: 2rem;
+                
+              color:$color-text;
+              @include max-width(550px){
+                font-size: 1rem;
+                max-width: 300px;
+                font-weight: 500;
+                line-height: 2.5rem;
+            }
+
+            }
+
+
+            .form__email{
+                width: 600px;
+                height: 73px;
+                margin-top: 5rem;
+                @include max-width(550px){
+                    width: 300px;
+                    height: 45px;
+                margin-top: 3rem;
+                }
+
+
+
+                   .form__wrapper{
+                     width: 100%;
+                     height: 100%;
+                     display: flex;
+                     .header__input{
+                        width: 456px;
+                        height: 100%;
+                        background:$bg-header-mail;
+                        border-radius: 5px 0px 0px 5px;
+                        color: $color-white;
+                        caret-color: $btn-color;
+                        &::placeholder{
+                            padding-left: 0.5rem;
+                            font-size: 1rem;
+                            color: $color-white;
+                        }
+                     }
+
+                     .header__input__btn{
+                        width: 174px;
+                        height: 73px;
+                        text-align: center;
+                       color: $color-white;
+                        background:$btn-color;
+                        text-transform: capitalize;
+                        font-size: 1rem;
+                        letter-spacing: 1px;
+                        border-radius: 5px 0px 0px 5px;
+                        @include max-width(800px){
+                            width: 300px;
+                            height: 45px;
+                        
+                        } 
+
+
+                            }
+                    
+                   }
+            }
+
+
+            .header__testimonial{
+                width: 600px;
+                height: 40px;
+                
+                display: grid;
+                grid-template-columns: repeat(2,auto);
+                grid-gap: 1rem;
+                justify-content: space-around;
+                align-items: center;
+                align-content: center;
+                margin-top: 2rem;
+
+                @include max-width(550px){
+                    width: 300px;
+                    height: 73px;
+                margin-top: 3rem;
+                grid-template-columns: repeat(1,auto);
+
+                }
+
+
+                .header__img__profiles {
+                      width: 145px;
+                      height: 40px;
+                      
+                    .header__peoples {
+                       width: 100%;
+                       height: 100%;
+                        object-fit: contain;
+                      }
+
+                    
+                    
+                }
+
+                .desc__peoples{
+                    width: 400px; 
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 0.6rem;
+                    color:$color-white;
+                    align-content: center;
+                    margin-top: -1rem; 
+
+                    @include max-width(550px){
+                          align-content: first baseline;
+                          margin-top: -3rem;
+                    }
+
+
+                }
+            }
+
+        }
+
+     .header__sec__right{
+        width: 667.41px;
+       height: 701.59px;
+       
+       @include max-width(550px){
+        width: 100%;
+        margin-top: 5rem;
+       }
+
+
+       .header__right__wrapper {
+            .header__right__wrapper{
+            width: 100%;
+            height: 100%;
+        }
+       }
+     }
+
+}
