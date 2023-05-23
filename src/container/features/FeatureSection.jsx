@@ -1,5 +1,5 @@
-import Features from "./Features";
-import './features.scss';
+import Features from "./features";
+import './Features.scss';
 import '../../assests/styles/style.scss'
 
 
