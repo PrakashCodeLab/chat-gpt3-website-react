@@ -1,4 +1,4 @@
-import Features from "./features";
+import Features from "./Features";
 import './Features.scss';
 import '../../assests/styles/style.scss'
 
